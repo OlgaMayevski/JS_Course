@@ -8,13 +8,44 @@
 </head>
 <body>
     <h2>Welcom to items.html page</h2>
+
+    <a href="index.html">index</a>
     <p>Table with title, header row, 10 rows and 7 columns</p>
    <table border=1>
-       <title>My table</title>
+        <caption>My table</caption>
        <tr> 
            <th colspan="7">The title of table</th>
            
         </tr> 
+        <tr>
+                <td colspan="2">colspan="2"</td>       
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2">rowspan="2"</td>
+                
+        </tr> 
+        <tr>
+                <td colspan="3">colspan="3"</td>       
+                <td></td>
+                <td></td>
+                <td></td>
+                
+        </tr> 
+        <tr>
+                <td colspan="4">colspan="4"</td>       
+                <td></td>
+                <td></td>
+                <td rowspan="2">rowspan="2"</td>
+        </tr> 
+        <tr>
+                <td colspan="5">colspan="5"</td>       
+                <td></td>
+                
+        </tr> 
+
+
         <tr>
                 <th>column 1</th>
                 <th>column 2</th>
@@ -31,7 +62,7 @@
                 <td></td>
                 <td></td>
                 <td><button onclick="window.location='item.html'">
-                            Change
+                                item.html
                 </button></td>
                 <td><button>
                             Delete
@@ -43,8 +74,8 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><button>
-                            Change
+                <td><button onclick="window.location='item.html'">
+                                item.html
                 </button></td>
                 <td><button>
                             Delete
@@ -56,8 +87,8 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><button>
-                            Change
+                <td><button onclick="window.location='item.html'">
+                                item.html
                 </button></td>
                 <td><button>
                             Delete
@@ -69,8 +100,8 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><button>
-                            Change
+                <td><button onclick="window.location='item.html'">
+                                item.html
                 </button></td>
                 <td><button>
                             Delete
@@ -78,6 +109,8 @@
         </tr> 
 
    </table> 
+   <br>
+   <button onclick="window.location='index.html'">Index</button></p> 
 
 </body>
 </html>
