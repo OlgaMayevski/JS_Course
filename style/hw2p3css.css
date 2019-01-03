@@ -1,0 +1,85 @@
+html {
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    width: 99vw;
+    height: 85vh;
+    font-family: Arial, Verdana, sans-serif;
+    /* Семейство шрифтов */
+    font-size: 11pt;
+    /* Размер основного шрифта в пунктах  */
+    text-align: center;
+    background-color: #fce0f0;
+    /* Цвет фона веб-страницы */
+    color: #333;
+    /* Цвет основного текста */
+
+}
+
+span {
+    text-align: justify;
+    /* Выравнивание по ширине */
+    margin-left: 0px;
+    /* Отступ слева в пикселах */
+    margin-right: 0px;
+    /* Отступ справа в пикселах */
+    border-left: 1px solid #999;
+    /* Параметры линии слева */
+    border-bottom: 1px solid #999;
+    /* Параметры линии снизу */
+    padding-left: 10px;
+    /* Отступ от линии слева до текста  */
+    padding-bottom: 10px;
+    /* Отступ от линии снизу до текста  */
+}
+
+/*---------------------------------------------------------*/
+
+div#main_div {
+    border: #888 3px solid;
+    display: block;
+    width: 98%;
+    height: 85%;
+    margin-left: 1vw;
+    background-color: white;
+    /*position: absolute;*/
+    clear: both;
+    min-width: 20px;
+    max-width: 4000px;
+}
+
+
+div#red {
+    z-index: 1;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+div#green {
+    z-index: 3;
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    margin-left: 300px;
+    margin-top: -110px;
+}
+
+div#blue {
+    z-index: 2;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin-left: 400px;
+    margin-top: -110px;
+}

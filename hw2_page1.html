@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style/hw2p1css.css" rel="stylesheet">
+    <title>HW2 p1</title>
+</head>
+
+<body>
+    <h2>Home Work 2, Page 1 (tabular layout)</h2>
+    <p> <button onclick="window.location='index.html'">HW1 page 1</button>
+        <button onclick="window.location='items.html'">HW1 page 2</button>
+        <button onclick="window.location='item.html'">HW1 page 3</button>
+        <span>HW2 page 1</span>
+        <button onclick="window.location='hw2_page2.html'">HW2 page 2</button>
+        <button onclick="window.location='hw2_page3.html'">HW2 page 3</button>
+    </p>
+
+    <table id='main_table'>
+
+        <tr id='1_row'>
+            <td colspan="2" class="td_row1">
+                111
+            </td>
+            <td colspan="2" class="td_row1">
+                111
+            </td>
+        </tr>
+
+        <!-- -->
+
+        <tr id='2_row'>
+            <td colspan="4" class="td_row2">
+                222
+            </td>
+        </tr id='3_row'>
+
+        <!-- -->
+
+        <tr>
+            <td colspan="4" class="td_row3">
+                <table id='internal_table'>
+                    <tr>
+                        <td class='internal_table_td'>333</td>
+                        <td class='internal_table_td'>333</td>
+                        <td class='internal_table_td'>333</td>
+                    </tr>
+                </table>
+            </td>
+        </tr id='4_row'>
+
+        <!-- -->
+
+        <tr>
+            <td class="td_row4">
+                444
+            </td>
+            <td class="td_row4">
+                444
+            </td>
+            <td class="td_row4">
+                444
+            </td>
+            <td class="td_row4">
+                444
+            </td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>

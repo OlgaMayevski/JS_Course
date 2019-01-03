@@ -1,0 +1,103 @@
+body {
+ 
+  width: 99vw;
+  height: 85vh;
+  font-family: Arial, Verdana, sans-serif;
+  /* Семейство шрифтов */
+  font-size: 11pt;
+  /* Размер основного шрифта в пунктах  */
+  text-align: center;
+  background-color: #adf0ec;
+  /* Цвет фона веб-страницы */
+  color: #333;
+  /* Цвет основного текста */
+
+}
+
+h1 {
+  color: #a52a2a;
+  /* Цвет заголовка */
+  font-size: 24pt;
+  /* Размер шрифта в пунктах */
+  font-family: Georgia, Times, serif;
+  /* Семейство шрифтов */
+  font-weight: normal;
+  /* Нормальное начертание текста  */
+}
+
+span {
+  text-align: justify;
+  /* Выравнивание по ширине */
+  margin-left: 0px;
+  /* Отступ слева в пикселах */
+  margin-right: 0px;
+  /* Отступ справа в пикселах */
+  border-left: 1px solid #999;
+  /* Параметры линии слева */
+  border-bottom: 1px solid #999;
+  /* Параметры линии снизу */
+  padding-left: 10px;
+  /* Отступ от линии слева до текста  */
+  padding-bottom: 10px;
+  /* Отступ от линии снизу до текста  */
+}
+
+
+
+#main_table {
+  padding: 0;
+  margin: 0;
+  width: 100%;   
+  height: 100%;
+  background-color:white;
+  border: #fff 3px solid;
+
+}
+
+tr#1_row {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: solid #fff 3px;
+}
+
+td.td_row1 {
+
+  background: orange;
+  border: solid #fff 3px;
+
+}
+
+td.td_row2 {
+  background: rgb(255, 255, 61);
+  border: solid #fff 3px;
+
+}
+
+td.td_row3 {
+  background: white;
+  border: solid #fff 0px;
+
+}
+
+td.td_row4 {
+  background: #cccccc;
+  border: solid #fff 3px;
+
+}
+
+#internal_table {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+td.internal_table_td {
+  background: lightblue;
+  padding: 0;
+  margin: 0;
+  border: solid #fff 1px;
+  width: 33,33%;
+
+}
