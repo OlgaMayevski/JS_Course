@@ -1,0 +1,70 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14pt;
+}
+
+header {
+                         /*-----position: static|absolute|fixed|relative|sticky|initial|inherit;-------*/
+
+   position: absolute;  /*The element is positioned relative to its first positioned (not static) ancestor element*/
+    left: 0px;
+    top: 0px;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    height: 15%;
+    background-color: rgb(58, 23, 26);
+    border-radius: 0px 0px 20px 20px;
+    color: beige;
+    /*padding: 5% 5% 5% 5%;*/
+    opacity: 0.8;
+    text-align: center;
+    clear: both;
+}
+
+/*-- sideBar --*/
+div.sidebar {
+    position: fixed; /*The element is positioned relative to the browser window*/
+    left: 0;
+    top: 0;
+    width: 10%;
+    height: 600px;
+    opacity: 0.8;
+    background-color: rgb(58, 23, 26);
+    border-radius: 0px 15px 15px 0px;
+    color: beige;
+    text-align: center;
+
+}
+
+article {
+  /* position: sticky;   The element is positioned relative to its normal position, 
+                      so "left:20px" adds 20 pixels to the element's LEFT position 
+    left: 15%;
+    top: 15%;
+    float: right;*/
+    margin-left: 10%;
+    margin-top: 7%;
+    background-color: rgb(250, 239, 250);
+    padding: 40px 40px 40px 40px;
+    width: 80%;
+    clear: both;
+}
+
+
+footer {
+    margin-bottom: 0px;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 75%;  
+    height: 15vh;
+    background-color: rgb(58, 23, 26);
+    border-radius: 20px 20px 0px 0px;
+    color: beige;
+    padding: 10px 10px 10px 15%;
+    opacity: 0.8;
+}

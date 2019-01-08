@@ -1,0 +1,250 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14pt;
+}
+
+h2 {
+    font-size: 14pt;
+    padding: 0;
+    margin: 2px;
+
+}
+
+.menu>p {
+    padding: 0;
+    margin: 2px;
+}
+
+.menu {
+    /*-----position: static|absolute|fixed|relative|sticky|initial|inherit;-------*/
+
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(240, 222, 174, 0.5);
+    color: rgb(21, 26, 1);
+    text-align: center;
+    clear: both;
+
+}
+
+.menu:hover {
+    background-color: rgb(195, 248, 152);
+}
+
+/*---------- General ---------------*/
+
+/*
+.wrapper {
+    display: grid;
+    margin: 10%;
+    border: #345682 0px solid;
+    grid-template-columns: 33fr 10fr 24fr 33fr;
+    grid-template-rows: repeat(7, 50px);
+    grid-column-gap: 1em;
+    grid-row-gap: 0.5em;
+
+}
+
+.red {
+    background: rgb(219, 29, 29);
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.orange {
+    background: rgb(245, 136, 12);
+    grid-column: 3/5;
+    grid-row: 1/2;
+}
+
+.green {
+    background: rgb(22, 145, 5);
+    grid-column: 1/5;
+    grid-row: 2/6;
+}
+
+.brown {
+    background: #7e5724;
+    grid-column: 1/2;
+    grid-row: 6/8;
+}
+
+.blue {
+    background: #37247e;
+    grid-column: 2/4;
+    grid-row: 6/8;
+}
+
+.violet {
+    background: #76247e;
+    grid-column: 4/5;
+    grid-row: 6/8;
+}
+
+/*------  Screen ------------*/
+
+@media screen and (min-width: 1001px) and (max-width: 1920px) {
+
+    .wrapper {
+        display: grid;
+        margin: 10%;
+        border: #345682 0px solid;
+        grid-template-columns: 33fr 10fr 24fr 33fr;
+        grid-template-rows: repeat(7, 50px);
+        grid-column-gap: 1em;
+        grid-row-gap: 0.5em;
+
+    }
+
+    .red {
+        background: rgb(219, 29, 29);
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .orange {
+        background: rgb(245, 136, 12);
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+
+    .green {
+        background: rgb(22, 145, 5);
+        grid-column: 1/5;
+        grid-row: 2/6;
+    }
+
+    .brown {
+        background: #7e5724;
+        grid-column: 1/2;
+        grid-row: 6/8;
+    }
+
+    .blue {
+        background: #37247e;
+        grid-column: 2/4;
+        grid-row: 6/8;
+    }
+
+    .violet {
+        background: #76247e;
+        grid-column: 4/5;
+        grid-row: 6/8;
+    }
+
+}
+
+/*------  Tablet ------------*/
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+
+
+    .wrapper {
+        display: grid;
+        margin: 10%;
+        border: #345682 0px solid;
+        grid-template-columns: 40fr 10fr 50fr;
+        grid-template-rows: repeat(8, 50px);
+        grid-column-gap: 1em;
+        grid-row-gap: 0.5em;
+    }
+
+    .brown {
+        background: #7e5724;
+        grid-column: 1;
+        grid-row: 1;
+        visibility: hidden;
+    }
+
+    .orange {
+        background: rgb(245, 136, 12);
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .violet {
+        background: #76247e;
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+
+    .red {
+        background: #f82b35;
+        grid-column: 1/4;
+        grid-row: 2/6;
+    }
+
+    .green {
+        background: rgb(22, 145, 5);
+        grid-column: 1/3;
+        grid-row: 6/9;
+    }
+
+    .blue {
+        background: #37247e;
+        grid-column: 3/4;
+        grid-row: 6/9;
+    }
+
+}
+
+/*------  SmartPhone ------------*/
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+
+    .wrapper {
+        display: grid;
+        margin: 10%;
+        margin-top: 20%;
+        border: #345682 0px solid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 50px);
+        grid-column-gap: 1em;
+        grid-row-gap: 0.5em;
+    }
+
+    .green {
+        background: rgb(22, 145, 5);
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .violet {
+        background: #76247e;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .red {
+        background: #f82b35;
+        grid-column: 1/2;
+        grid-row: 3/6;
+    }
+
+    .brown {
+        background: #7e5724;
+        grid-column: 1;
+        grid-row: 1;
+        visibility: hidden;
+    }
+
+    .orange {
+        grid-column: 1;
+        grid-row: 1;
+        visibility: hidden;
+    }
+
+    .blue {
+        grid-column: 1;
+        grid-row: 1;
+        visibility: hidden;
+    }
+
+}
