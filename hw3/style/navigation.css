@@ -1,0 +1,30 @@
+/*-- navigation --*/
+div.menu {
+    position: fixed;
+    /*The element is positioned relative to the browser window*/
+    left: 0;
+    top: 0;
+    width: 8%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: #aaa;
+    color: #333;
+    text-align: center;
+}
+
+div.menu>p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14pt;
+}
+
+div.menu>p>span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12pt;
+    padding: 3px;
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+div.menu>p>button {
+    padding: 5px;
+}

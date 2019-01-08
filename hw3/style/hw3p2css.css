@@ -1,0 +1,156 @@
+html body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+}
+
+.wrapper {
+    display: grid;
+    margin-left: 12%;
+    margin-top: 2%;
+    border: #345682 0px solid;
+    grid-template-columns: repeat(4, 200px 200px 100px 100px);
+    grid-template-rows: repeat(5, 1fr 1fr 1fr 4fr 4fr);
+    grid-gap: 1em;
+
+}
+
+.wrapper>div {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    text-justify: auto;
+    border: 1px solid brown;
+    /*vertical-align:middle;
+  justify-content: center;
+  Как их вертикально по центру разместить ? */
+}
+
+.box1 {
+    background: #d0db59;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.box2 {
+    background: #55b9d1;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.box3 {
+    background: #f09e3a;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.box4 {
+    background: #f4c343;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+/*-------------2 row-------------*/
+
+.box5 {
+    background: #68ad5c;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.box6 {
+    background: #9030ad;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.box7 {
+    background: #68ad5c;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.box8 {
+    background: #4995ed;
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+/*-------------3 row-------------*/
+.box9 {
+    background: #e15241;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.box10 {
+    background: #ec6337;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.box11 {
+    background: #74564b;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.box12 {
+    background: #f4c343;
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+/*-------------4 row-------------*/
+
+.box13 {
+    background: #68ad5c;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.box14 {
+    background: #667c89;
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.box15 {
+    background: #4995ed;
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.box16 {
+    background: #fced60;
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+/*-------------5 row-------------*/
+.box17 {
+    background: #ec6337;
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.box18 {
+    background: #613cb0;
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.box19 {
+    background: #667c89;
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+.box20 {
+    background: #8f31ab;
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+
+/*--------------------------*/
