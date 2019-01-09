@@ -17,14 +17,17 @@ html body {
 }
 
 .wrapper>div {
+    display: grid;
     color: white;
     font-size: 1em;
-    text-align: center;
-    text-justify: auto;
     border: 1px solid brown;
-    /*vertical-align:middle;
-  justify-content: center;
-  Как их вертикально по центру разместить ? */
+
+}
+
+/* Как TEXT вертикально по центру разместить: */
+.wrapper div div{
+    justify-self: center;
+    align-self: center;
 }
 
 .box1 {

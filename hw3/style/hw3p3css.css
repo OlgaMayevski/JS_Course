@@ -17,9 +17,9 @@ html body {
 }
 
 .wrapper>div {
+    display: grid;
     background-color: #ccc;
     color: black;
-    text-align: center;
     font-size: 2em;
 }
 
@@ -30,6 +30,13 @@ html body {
 .wrapper>div:nth-child(odd) {
     background-color: #444;
     color: white;
+}
+
+/* Как TEXT вертикально по центру разместить: */
+.wrapper div div{
+    
+    align-self: center;
+    margin-left: 30px;
 }
 
 .box1 {
