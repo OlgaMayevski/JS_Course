@@ -1,0 +1,26 @@
+.wrapper {
+    display: grid;
+    margin: 2% 2%  0% 12%;
+    background-color: #f8f9fa;
+    
+    border: #345682 2px solid;
+    /*grid-template-columns: repeat(6, 150px);
+    grid-template-rows: repeat(3, 120px);
+    grid-gap: 0.5em;*/
+}
+
+.header {
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-row: 100%;
+}
+
+.nested{
+    display: grid;
+    justify-self: right;
+    padding-top: 20px;
+    padding-right: 20px;
+}

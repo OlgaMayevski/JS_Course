@@ -1,6 +1,7 @@
 html body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /*  не даёт падингам менять размер*/
     font-family: 'Times New Roman', Times, serif;
     font-size: 14pt;
 }
