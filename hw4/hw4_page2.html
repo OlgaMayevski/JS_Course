@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HW 4 Task 2 </title>
+    <script src='hw4p2.js'></script>
+    <link rel="stylesheet" href="style/hw4p2css.css">
+    <title>HW 4 Task 2</title>
 </head>
+
 <body>
-    <p>HW 4 Task 2</p>
-    
+    <div>
+        <p>HW 4 Task 2</p>
+        <div id="all_content">
+        
+                <ul>Create a page with 2 buttons and implements the following functionality:
+                    <li>When you click on the first - go to another (any) page</li>
+                    <li>When you click on the second - deleting the content from the page and drawing any
+                        layout with flexbox</li>
+                </ul>
+  
+
+
+
+            <button id="first_btn" onclick="first_btn_click()" class="btn btn-success"> Go to another page</button>
+            <button id="second_btn" onclick="second_btn_click()" class="btn btn-danger">Delete all content</button>
+        </div>
+        <br>
+        <button onclick="window.location='../index.html'">Navigation Page</button>
+
+
+    </div>
+
+    <div id="username">
+        <script src='script/hw4p2.js'></script>
+    </div>
+
 </body>
+
 </html>

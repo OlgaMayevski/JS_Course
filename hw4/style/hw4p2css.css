@@ -1,0 +1,19 @@
+body {
+    height: 90vh;
+}
+
+.row {
+    display: flex;
+    height: 45%;
+}
+
+.column {
+    background-color: yellowgreen;
+    opacity: 0.5;
+    flex: 50%;
+    margin: 1%;
+    border: 5px solid #ccc;
+    padding: 10%;
+    text-align: center;
+    justify-content: center;
+}
