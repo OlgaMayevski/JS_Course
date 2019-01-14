@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab Task 1</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="navigation">
+            <img src="i/logo_leverx.png" />
+            <div class="slogan">
+                Helping Companies Leverage<br>Investments in SAP Solutions
+            </div>
+            <a href='http://leverx.ru'><button>Main</button></a>
+            <div class="dropdown">
+                <button>Offices</button>
+                <div class="dropdown-content">
+                    <p><a href='#'>Минск, Беларусь, 223053, ул. Лопатина 7А, офис 16, Минский р-н, д. Копище</a></p>
+                    <p><a href='#'>Москва, Россия, 125167, Театральная аллея, 3, стр. 1, этаж 6</a></p>
+                    <p><a href='#'>Маунтин Вью, США, 800 Вест Эль Камино Реал, Сьют 180, Маунтин Вью, США, CA 94040</a></p>
+                    <p><a href='#'>Детройт, США, 800 Киртс Булевард, Сьют 400, Трой, США, MI 48084</a></p>
+                </div>
+            </div>
+        </div>
+        <form class="search">
+            <input type="search">
+            <button>Search</button>
+        </form>
+    </div>
+    <!--------------------------------------------------->
+    <div class="wrapper">
+        Here the content is created dynamically.
+        <div class="card_container"> </div>
+        
+        <script>
+
+            var cardContainer = document.getElementsByClassName("card_container")[0];
+
+            var card = document.createElement("div");
+            card.classList.add("card");
+
+            var cardContent = document.createElement("div");
+            cardContent.classList.add("card_content");
+
+            var cardHeader = document.createElement("div");
+            cardHeader.classList.add("card_header");
+            cardHeader.textContent = "Международное сотрудничество во всех сферах";
+
+            var cardText = document.createElement("div");
+            cardText.classList.add("card_text");
+            cardText.textContent =
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iste, odit nihil officia soluta dicta quibusdam id quia impedit velit cumque ullam accusantium quidem facilis aut laudantium asperiores aspernatur ducimus.";
+
+            var cardButton = document.createElement("div");
+            cardButton.classList.add("card_button");
+
+            var image = document.createElement("img");
+            image.src = "i/kon1.jpg";
+
+            var button = document.createElement("button");
+            button.textContent = "Try";
+
+            cardButton.appendChild(button);
+
+            cardContent.appendChild(cardHeader);
+            cardContent.appendChild(cardText);
+            cardContent.appendChild(cardButton);
+
+            card.appendChild(image);
+            card.appendChild(cardContent);
+
+            for (i = 0; i < 6; i++) {
+                cardContainer.appendChild(card);
+            };
+        </script>
+    </div>
+
+</body>
+
+</html>
