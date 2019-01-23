@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>HW 4 Task 1</title>
+    <link href="style.css" rel="stylesheet">
+    <title>hw5 Olka</title>
 </head>
 
 <body>
+
 
     <!-- Navigation -->
     <div class="menu">
@@ -22,9 +23,9 @@
             <button onclick="window.location='../hw3/hw3_page4.html'">HW3 p4</button>
             <button onclick="window.location='../hw3/hw3_page5.html'">HW3 p5</button>
             
-            <button onclick="window.location='#'">HW4 p1</button>
+            <button onclick="window.location='../hw4/hw4_page1.html'">HW4 p1</button>
             <button onclick="window.location='../hw4/hw4_page2.html'">HW4 p2</button>
-            <button onclick="window.location='../hw5/index.html'">HW5</button>
+            <button onclick="window.location='#">HW5</button>
             <button onclick="window.location='../hw6/index.html'">HW6</button>
             <button onclick="window.location='../hw7/index.html'">HW7</button>
             <button onclick="window.location='../hw8/index.html'">HW8</button>
@@ -35,31 +36,39 @@
     </div>
 
     <!-- Content -->
+    <div class="wrapper">
 
-
-    <div>
-        <h1>HW 4 Task 1</h1>
+        <h1>HW 5 - 12 variant - Inheritance</h1>
         <p>TODO</p>
-        <ul>Write a code that implements the following functionality:
-            <li>username request (popup)</li>
-            <li>checking username for the contents of numbers
-                <ul>
-                    <li>in the absence of numbers, display the name backwards </li>
-                    <li>in the presence of numbers in the name, translate letters and numbers through a symbol to upper
-                        or lower case</li>
-                </ul>
-            </li>
-            <li>place all this in a js-file connected to the created empty html page</li>
-        </ul>
-
+        <p>Class "Account". <br>
+            Inherited classes: "current account" and "savings account".<br>
+            Possible fields include: number, type of contribution, PIN, balance, date of
+            account creation, user, type of user (active, blocked ...), history of account
+            changes (the list of operations of replenishment of withdrawal of money from
+            the account), etc.</p>
         <hr>
         <br>
-        <p>The result:</p>
+        <p>Create "current account":</p>
+
+        <form onsubmit="onCreateCurrentAccount()">
+            <label>Number:</label>
+            <input type="text" id="currentAccount">
+
+            <label>Type of contribution:</label>
+            <input type="text" id="typeOfContribution">
+
+            <label>PIN:</label>
+            <input type="text" id="pin">
+
+            <label>User:</label>
+            <input type="text" id="user">
+
+            <input class="create-submit" type="submit" value="Create">
+            <script src="script.js"></script>
+        </form>
+
     </div>
 
-    <div id="username">
-        <script src='script/hw4p1.js'></script>
-    </div>
 
 </body>
 
