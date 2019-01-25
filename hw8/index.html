@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HW 8</title>
+    <title>HW 8 - for </title>
 </head>
 
 <body>
@@ -32,14 +32,12 @@
         <hr>
     </div>
 
-    <!-- Content -->
+    <!-- The Tasks -->
     <div>
         <h1>Homework Lection 8</h1>
 
         <p>TODO</p>
-        <p>Task 1</p>
-
-        <p>Make oData request to the following service (by jQuery library):
+        <p>Task 1. Make oData request to the following service (by jQuery library):
             <a href='https://services.odata.org/V4/TripPinServiceRW'>www.services.odata.org/V4/TripPinServiceRW</a></p>
         <ul>
             <li>make one request for each of query string parameter ($count, $expand, $orderby,
@@ -48,13 +46,9 @@
             <li>make one request with combination of 3 string parameters</li>
             <li>display all results as a table</li>
         </ul>
-        <p>Task 2</p>
+        <p>Task 2. Read and try to understand standard ‘sap.ui.commons’ documentation</p>
 
-        <p>Read and try to understand standard ‘sap.ui.commons’ documentation</p>
-
-        <p>Task 3</p>
-
-        <p>Perform first 19 steps (till to data binding) of the following tutorial:
+        <p>Task 3. Perform first 19 steps (till to data binding) of the following tutorial:
             <a href='https://ui5.sap.com/#/topic/3da5f4be63264db99f2e5b04c5e853db'>
                 www.ui5.sap.com/#/topic/3da5f4be63264db99f2e5b04c5e853db</a></p>
 
@@ -63,6 +57,30 @@
         <p>1. ‘sap.ui.commons’ documenation <a href='https://openui5.hana.ondemand.com/#/topic'>https://openui5.hana.ondemand.com/#/topic</a></p>
         <hr>
     </div>
+
+    <!-- Solution -->
+    <div id='mainDiv'>
+
+        <button id="search" type="button">oData Search</button>
+        <button id="select" type="button">oData Select</button>
+        <button id="count" type="button">oData Count</button>
+        <button id="filter" type="button">oData Filter</button>
+        <!--<button id="expand" type="button">oData Filter expand</button>-->
+        <button id="skip" type="button">oData Skip</button>
+        <button id="top" type="button">oData Top</button>
+        <button id="order-by" type="button">oData OrderBy</button>
+        <button id="3filters" type="button">oData 3 Filters</button>
+        <button id="3stringparams" type="button">oData 3 String Params</button>
+
+        <table id="my_table">
+        </table>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </div>
+    <!---->
+
+
 </body>
 
 </html>

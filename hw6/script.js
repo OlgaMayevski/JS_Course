@@ -1,60 +1,87 @@
+var url = "https://my-json-server.typicode.com/HannaYurkavets/Web-Technologies-for-SAP-HANA-CloudPlatform-/posts/";
 
-//ES6
-class ToDoList {
+function getRequest() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, false);
+    xhr.send();
+    if (xhr.status != 200) {    // =200 - success  ; !=200  - figova
+        alert(xhr.status + ': ' + xhr.statusText);
+    } else {
+        var array = JSON.parse(xhr.responseText);
+        var table = '<table>';
+        table += '<th>- ID -</th><th>- Title -</th><th>- Delete -</th><th>- Edit -</th>';
+        for (var i in array) {
+            table += '<tr><td>' +
+                array[i]['id'] + '</td><td>' +
+                array[i]['title'] + '</td><td><button id="' + array[i]['id'] + '" onclick="delRequest(this.id)">- Delete -</button></td>' +
+                '</td><td><button id="' + array[i]['id'] + '" onclick="putRequest(this.id)">- Edit -</button></td></tr>';
 
-    fetchData(url = '', method = '', body = {}) {
-        let init = {
-            method, // method: "GET"
-            mode: "cors",
-            headers: {
-                "Content-Type": "application/json",
-
-            },
-            body // body : { userId: 10, userName: "Ivan" }
         }
-
-        return fetch(url)
-            .then(res => res.json())
-            .then(data => {
-                data.splice(10, data.length - 10, 'I love SAP');
- 
-                console.log(data);
-            })
-            .catch(error => alert(`Error: ${error.name} - ${error.message}`));
+        table += '</table>';
+        document.getElementById('table').innerHTML = table;
     }
-
-    // get
-    fetchUsers() {
-        const to_do_uri = 'https://jsonplaceholder.typicode.com/todos/';
-
-        this.fetchData(to_do_uri, "GET");
-    }
-
-    // post
-    createUser() {
-
-    }
-
-    // put
-    updateUser() {
-
-    }
-
-    // delete
-    deleteUser() {
-
-    }
-
-    // fillData() {
-    //     const data = this.fetchUsers();
-
-    // }
 }
 
-const toDoList = new ToDoList();
-toDoList.fetchUsers();
+function postRequest() {
 
-// 1. Get data
-// 2. Get table and then table body
-// 3. Create loop with data for (let i = 0; i < data.length; i++ )
-// 4. In loop you create new row with 
+    var xhr = new XMLHttpRequest();
+
+    var obj = {};
+    obj.id = document.getElementById('id').value;
+    obj.title = document.getElementById('title').value;
+    var json = JSON.stringify(obj);
+
+    xhr.open('POST', url);
+    xhr.setRequestHeader('Content-type', 'application/json');
+    xhr.send(json);
+    xhr.onload = function () {
+        if (xhr.readyState == 4 && xhr.status == "201") {
+            getRequest();
+            alert("Record have been created\nResponse status: "+xhr.status
+                   +"\n"+xhr.responseText);
+        }
+    }
+    xhr.onerror = function () {
+        alert('Error:' + xhr.status);
+    }
+}
+
+function delRequest(row_id) {
+    var new_url = url + row_id;
+    var xhr = new XMLHttpRequest();
+    xhr.open("DELETE", new_url);
+    xhr.send();
+
+    xhr.onload = function () {
+        if (xhr.readyState == 4 && xhr.status == "200") {
+            getRequest();
+            alert("Record have been deleted\nResponse status: "+xhr.status);
+        }
+    }
+
+    xhr.onerror = function () {
+        alert('Error ' + xhr.status);
+    }
+}
+
+function putRequest(row_id) {
+    var new_url = url + row_id;
+    var xhr = new XMLHttpRequest();
+    var put_obj = {};
+    put_obj.id = document.getElementById('id').value;
+    put_obj.title = document.getElementById('title').value;
+    var json = JSON.stringify(put_obj);
+    xhr.open("PUT", new_url);
+    xhr.setRequestHeader('Content-type', 'application/json');
+    xhr.send(json);
+    xhr.onload = function () {
+        if (xhr.readyState == 4 && xhr.status == "200") {
+            alert("Record have been updated\nResponse status: "+xhr.status
+            +"\n"+xhr.responseText);
+        }
+    }
+    xhr.onerror = function () {
+        alert('Error:' + xhr.status);
+    }
+
+}

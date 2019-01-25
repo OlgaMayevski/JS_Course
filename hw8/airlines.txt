@@ -1,0 +1,45 @@
+{"@odata.context":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/$metadata#Airlines",
+"@odata.nextLink":"https://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines?%24skiptoken=8",
+"value":[
+    
+{"@odata.id":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines('AA')",
+"@odata.editLink":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines('AA')",
+"AirlineCode":"AA",
+"Name":"American Airlines"}
+,
+{"@odata.id":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines('FM')",
+"@odata.editLink":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines('FM')",
+"AirlineCode":"FM",
+"Name":"Shanghai Airline"}
+,
+{"@odata.id":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines('MU')",
+"@odata.editLink":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines('MU')",
+"AirlineCode":"MU",
+"Name":"China Eastern Airlines"}
+,
+{"@odata.id":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines('AF')",
+"@odata.editLink":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines('AF')",
+"AirlineCode":"AF","Name":"Air France"}
+,
+{"@odata.id":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines('AZ')",
+"@odata.editLink":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines('AZ')",
+"AirlineCode":"AZ",
+"Name":"Alitalia"}
+,
+{"@odata.id":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines('AC')",
+"@odata.editLink":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines('AC')",
+"AirlineCode":"AC",
+"Name":"Air Canada"}
+,
+{"@odata.id":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines('OS')",
+"@odata.editLink":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines('OS')",
+"AirlineCode":"OS",
+"Name":"Austrian Airlines"}
+,
+{"@odata.id":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines('TK')",
+"@odata.editLink":"http://services.odata.org/V4/(S(r5gimdrzwwe5cjpzixypctar))/TripPinServiceRW/Airlines('TK')",
+"AirlineCode":"TK",
+"Name":"Turkish Airlines"}
+
+]}
+
