@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!---->
+    <script id="sap-ui-bootstrap" src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js" data-sap-ui-theme="sap_belize"
+        data-sap-ui-libs="sap.m" data-sap-ui-compatVersion="edge" data-sap-ui-async="true" data-sap-ui-resourceroots='{
+        "sap.ui.demo.db": "./"
+    }'
+        data-sap-ui-oninit="module:sap/ui/demo/db/index">
+    </script>
+    <script src="script.js"></script>
+    <!---->
     <title>HW 9</title>
 </head>
 
@@ -21,31 +30,28 @@
             <button onclick="window.location='../hw3/hw3_page4.html'">HW3 p4</button>
             <button onclick="window.location='../hw3/hw3_page5.html'">HW3 p5</button>
 
-            <button onclick="window.location='../hw4/hw4_page1.html'">HW4 p2</button>
+            <button onclick="window.location='../hw4/hw4_page1.html'">HW4 p1</button>
             <button onclick="window.location='../hw4/hw4_page2.html'">HW4 p2</button>
             <button onclick="window.location='../hw5/index.html'">HW5</button>
             <button onclick="window.location='../hw6/index.html'">HW6</button>
-            <button onclick="window.location='../hw7/index.html'">HW7</button>
+
             <button onclick="window.location='../hw8/index.html'">HW8</button>
-            <button onclick="window.location='#'">HW9</button>
-            <button onclick="window.location='../hw10/index.html'">HW10</button>
+            <button onclick="window.location='../HW8_SAPUI5/index.html'">HW8_SAPUI5</button>
+            <button onclick="window.location='#'">HW9_SAPUI5</button>
         </p>
         <hr>
     </div>
 
     <!-- Content -->
     <div>
-        <h1>Homework Lection 9</h1>
+        <h1>Homework Lection 9 - Data Binding</h1>
 
         <p>TODO</p>
-        <p>Task 1</p>
-        <p>Perform all the steps of the following data binding tutorial:
+        <p>Task 1. Perform all the steps of the following data binding tutorial:
             <a href='https://openui5.hana.ondemand.com/#/topic/4cde849dc18949b69bbe152a0aaa19c6'>
                 https://openui5.hana.ondemand.com/#/topic/4cde849dc18949b69bbe152a0aaa19c6</a></p>
 
-        <p>Task 2</p>
-
-        <p>Create an application that displays all the fields of the model available at the following address:
+        <p>Task 2. Create an application that displays all the fields of the model available at the following address:
             <a href='https://services.odata.org/TripPinRESTierService/People'>
                 https://services.odata.org/TripPinRESTierService/People</a></p>
         <p>TO READ</p>
@@ -54,9 +60,14 @@
             <br>
             2. OpenUI5 documentation
             <a href='https://openui5.hana.ondemand.com/#/topic'>https://openui5.hana.ondemand.com/#/topic</a></p>
-        <hr>
 
     </div>
+    <hr>
+
+    <!---->
+    <div id="content"></div>
+    <!---->
+
 
 </body>
 
